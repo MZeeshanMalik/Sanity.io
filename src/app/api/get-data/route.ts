@@ -1,7 +1,7 @@
 import { client } from "@/sanity/client";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+export async function GET() {
   try {
     // Parse incoming JSON data
     const res = await client.fetch("*[_type == 'post']");
